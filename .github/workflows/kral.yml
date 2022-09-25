@@ -24,6 +24,8 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Emre37destan/KralVDS/main/Files/NGROK-AP.bat -OutFile NGROK-AP.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Emre37destan/KralVDS/main/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Emre37destan/KralVDS/main/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Emre37destan/KralVDS/main/Files/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/Emre37destan/KralVDS/main/Files/wallpaper.bat -OutFile wallpaper.bat
     - name: 5. TS Etkinleştiriliyor!
       run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
     - name: 6. RDP için Güvenlik Duvarı Aktif!
